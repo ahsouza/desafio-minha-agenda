@@ -71,7 +71,7 @@ Com o **POSTMAN** instalado, faça as solicitações de chamadas **HTTP** da **A
   - [GET /api/tarefas](#retornar-tarefas)
   - [POST /api/tarefas](#registrar-tarefa)
   - [DELETE /api/tarefas/{id}](#excluir-tarefa)
-  - [Docker](https://github.com/ahsouza/desafio-minha-agenda/blob/docker/README.md)
+  - [Docker](https://github.com/ahsouza/desafio-minha-agenda/tree/docker)
   - [Deploy AWS](#implantando-aplicativo)
 
 
