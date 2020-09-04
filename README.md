@@ -1,5 +1,11 @@
 # desafio-minha-agenda
-Desafio em processo seletivo para vaga desenvolvedor back-end
+
+Com o **Docker** instalado em sua máquina, altere o `branch` do projeto para `docker` com o seguinte comando `git`:
+
+```sh
+git checkout docker
+```
+Agora iremos utilizar comandos docker-compose na construção dos serviços
 
 Compilando imagem do aplicativo:
 
