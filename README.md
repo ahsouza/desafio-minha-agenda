@@ -40,3 +40,6 @@ docker-compose exec app php artisan key:generate
 Vá até seu navegador e acesse o nome de `domínio` ou `endereço IP` do seu servidor na porta **8000**
 
 `http://localhost:8000`
+
+
+Exemplos de como fazer solicitações **HTTP** da [API Minha Agenda](https://github.com/ahsouza/desafio-minha-agenda#cadastro-usuario)
