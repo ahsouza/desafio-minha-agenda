@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/email/verify/{id}', 'API\VerificationController@verify')->name('verification.verify');
+Route::get('/email/resend', 'API\VerificationController@resend')->name('verification.resend');
 Route::post('/cadastro', 'API\AuthController@register');
 Route::post('/login', 'API\AuthController@login');
 
