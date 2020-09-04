@@ -1,14 +1,13 @@
 # desafio-minha-agenda
-Desafio em processo seletivo para vaga desenvolvedor back-end
+Desafio para processo seletivo á vaga Desenvolvedor Back-End
 
-
-Para termos o Laravel instalado em nossa máquina Windows, é necessário ter o **PHP com a versão 7.2 no mínimo** e gerenciador de dependências **Composer**.
+Foi escolhido por mim o **Framework PHP Laravel** para desenvolver a tarefa.
+Para termos o **Laravel** instalado em nossa máquina Windows, é necessário ter o **PHP com a versão 7.2 no mínimo** e gerenciador de dependências **Composer**.
 
 Simplificaremos cada etapa da construção de uma **API** enviando solicitações **REST**, **SOAP** e **GraphQL**, vamos utilizar o **POSTMAN**.
 
-E para gerenciarmos as versões no desenvolvimento do Software com **GIT**, vamos utilizar o modelo de ramificação rigoroso com **GIT FLOW**.
-
-
+E para gerenciarmos as versões no desenvolvimento do Software com **GIT**, vamos utilizar o modelo de ramificação rigoroso com **GIT FLOW**. Nesse caso teremos 
+4 ramificações git: **MASTER**, **DEVELOP**, **DOCKER** & **AWS**.
 
 ###### Pré-Requisitos no Windows
 
@@ -18,6 +17,7 @@ E para gerenciarmos as versões no desenvolvimento do Software com **GIT**, vamo
 - PHP 7.2 no mínimo [Download](https://windows.php.net/download/)
 - Composer [Download](https://getcomposer.org/)
 - Postman [Download](https://www.postman.com/downloads/)
+- Docker [Download](https://docs.docker.com/docker-for-windows/install/)
 
 
 Após concluir a instalaçao do **PHP & Composer** em sua máquina, faça um teste para saber se está ocorrendo tudo bem com o gerenciador de dependências em seu computador:
@@ -64,13 +64,15 @@ php artisan serve
 
 Com o **POSTMAN** instalado, faça as solicitações de chamadas **HTTP** da **API** minha agenda e não se esqueça de fazer login com `usuários autenticados` e atribuir seu **Token** no cabeçalho da requisição que depende dos usuários autenticados para ter acesso
 
-## Endpoints
+## Sumário
 
   - [POST /api/cadastro](#cadastro-usuario)
   - [POST /api/login](#login-usuario)
   - [GET /api/tarefas](#retornar-tarefas)
   - [POST /api/tarefas](#registrar-tarefa)
   - [DELETE /api/tarefas/{id}](#excluir-tarefa)
+  - [Docker](#containerizando-app)
+  - [Deploy AWS](#implantando-aplicativo)
 
 
 ## Cadastro Usuario
@@ -128,7 +130,7 @@ Retorne todas as tarefas
 ```bash
 https://localhost:8000/api/tarefas
 ```
-![alt text](img/GET_tarefas.png)
+![alt text](img/GET_tasks.png)
 
 
 ## Registrar Tarefa
