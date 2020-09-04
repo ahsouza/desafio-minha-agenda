@@ -139,7 +139,7 @@ Salvando nova tarefa
 ```bash
 https://localhost:8000/api/tarefas
 ```
-![alt text](img/POST_tarefas.png)
+![alt text](img/POST_tasks.png)
 
 
 ###### Query Params
@@ -162,4 +162,4 @@ Deletando tarefa
 ```bash
 https://localhost:8000/api/tarefas/{id}
 ```
-![alt text](img/DELETE_tarefas.png)
+![alt text](img/DELETE_task.png)
